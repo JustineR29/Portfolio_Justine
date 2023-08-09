@@ -13,7 +13,7 @@ header>a>img{
 
 header, footer{
     width: 100%;
-    background-image: url(../media/img/header3.jpg);
+    background-image: url(../media/img/header3.webp);
     opacity: 0.8;
     background-position: center;
     border-bottom: solid #e0e0e0 1px;
@@ -26,7 +26,7 @@ h2, article>a{
     padding: 2px 5px;
 }
 h2{
-    background-image: url(../media/img/header3.jpg);
+    background-image: url(../media/img/header3.webp);
     background-position: center;
     color: white;
     text-align: center;
@@ -71,7 +71,7 @@ body{
 }
 main{
     width: 100%;
-    background-image: url(../media/img/fond7.jpg);
+    background-image: url(../media/img/fond7.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
