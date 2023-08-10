@@ -93,7 +93,7 @@ section, article{
     justify-content: center;
     align-items: center;
 }
-article, div, p{
+article, div{
     width: 100%;
 }
 .bas, .comp{
@@ -105,6 +105,7 @@ article, div, p{
 main p{
     text-indent: 2%;
     text-align: justify;
+    width: 98%;
 }
 section:first-child>article:nth-child(2){
     max-width: 100%;
@@ -165,6 +166,7 @@ ul{
 }
 li{
     font-weight: normal;
+    margin-right: 1%;
 }
 
 footer{
@@ -175,15 +177,17 @@ footer{
     align-items: center;
 }
 footer>a{
-    height: 80%;
+    height: 60%;
+    max-width: 23%;
     opacity: .9;
 }
 footer>a:hover{
-    height: 90%;
+    height: 70%;
     opacity: 1;
 }
 footer>a>img{
-    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 a{
     text-decoration: none;
@@ -221,6 +225,8 @@ a:hover{
     header>p{
         margin-left: 34px;
     }
+}
+    @media all and (orientation: portrait) {
     .comp, section:last-child>article:first-child>ul{
         justify-content: flex-start;
     }
