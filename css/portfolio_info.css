@@ -209,6 +209,16 @@ a:hover{
     p, ul, li{
       font-size: small;
     }
+    section:first-child>p{
+        text-align: justify;
+    }
+    section:nth-child(2)>article{
+        width: 100%;
+    }
+    section:nth-child(2)>article:nth-child(2)>div, section:nth-child(2)>article:nth-child(3)>div{
+        width: 100%;
+        justify-content: flex-start;
+    }
     section:last-child>article>div>ul>li{
         width: 100px;
     }

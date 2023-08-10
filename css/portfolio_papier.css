@@ -217,4 +217,13 @@ a:hover{
     header>p{
         margin-left: 34px;
     }
+    section:last-child>article{
+        width: 100%
+    }
+    .comp, section:last-child>article:first-child>ul{
+        justify-content: flex-start;
+    }
+    section:first-child>article:first-child>p{
+        text-align: justify;
+    }
 }
