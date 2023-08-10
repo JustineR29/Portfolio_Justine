@@ -67,7 +67,6 @@ section{
     align-items: center;
 }
 p{
-    width: 98%;
     text-indent: 2%;
     text-align: justify;
 }
@@ -99,10 +98,9 @@ li{
 ul>a, p>a{
     color: inherit;
 }
-section:last-child>article{
-    width: 100%;
+article, div, p{
+    width: 100%
 }
-
 section:last-child>article>div>ul{
     height: 100%;
     width: 100%;
@@ -165,11 +163,11 @@ li>div{
     width: 40%;
     background-color: #827e0c;
 }
-.acteur{
+.acteur, .github{
     width: 35%;
     background-color: #8d810d;
 }
-.ref, .github{
+.ref{
     width: 30%;
     background-color: #97840e;
 }
@@ -209,14 +207,7 @@ a:hover{
     p, ul, li{
       font-size: small;
     }
-    section:first-child>p{
-        text-align: justify;
-    }
-    section:nth-child(2)>article{
-        width: 100%;
-    }
     section:nth-child(2)>article:nth-child(2)>div, section:nth-child(2)>article:nth-child(3)>div{
-        width: 100%;
         justify-content: flex-start;
     }
     section:last-child>article>div>ul>li{
