@@ -184,14 +184,12 @@ section:nth-child(2)>a>article{
 }
 .projets>a{
     height: 10vh;
-    max-width: 10%;
-    max-height: 10vh;
+    width: 10vh;
     opacity: 0.8;
 }
 .projets>a>img{
     max-height: 100%;
-    width: 100%;
-    height: fit-content;
+    max-width: 100%;
 }
 .projets>a:hover{
     opacity: 1;
