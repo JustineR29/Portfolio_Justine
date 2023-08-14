@@ -153,6 +153,11 @@
 
     <footer itemscope itemtype="https://schema.org/Person">
         <meta itemprop="name" content="Justine Raoul Madec-Cleï">
+        
+        <p>Le saviez-vous ?<br/>
+            <span id="fait"></span></p>
+        
+        <div>
         <a itemprop="mainEntityOfPage" itemscope itemtype="https://schema.org/WebPage" itemprop="url" href="https://www.linkedin.com/in/justine-raoul-440254270/" target="_blank">
             <img itemscope itemtype="https://schema.org/Brand" src="media/img/linkedin.webp" alt="LinkedIn" title="Voir le profil LinkedIn"/>
         </a>
@@ -165,6 +170,45 @@
         <a itemtype="https://schema.org/DownloadAction" itemtype="https://schema.org/DigitalDocument" href="media/img/CV_04-2023-Developpeur_JRM.pdf" target="_blank">
             <img src="media/img/CV.webp" alt="CV" title="Télécharger le CV"/>
         </a>
+        </div>
     </footer>
 </body>
 </html>
+
+<script>
+    function randomtext() {
+        var randomtxt = [
+        'Plus un instrument est petit, plus il sonne aigu.<br/><a itemscope itemtype="https://schema.org/Project" href="portfolio_instruments.html" title="Voir le projet">En savoir plus...</a>',
+        'Plus une corde est tendue, plus elle sonnera aigue.<br/><a itemscope itemtype="https://schema.org/Project" href="portfolio_instruments.html" title="Voir le projet">En savoir plus...</a>',
+        'La harpe est composée de 1415 pièces et 46 cordes.<br/><a itemscope itemtype="https://schema.org/Project" href="portfolio_instruments.html" title="Voir le projet">En savoir plus...</a>',
+        "Certaines percussions ont une fréquence aléatoire, tandis que d'autres sont conçues pour émettre des notes précises.<br/><a itemscope itemtype='https://schema.org/Project' href='portfolio_instruments.html' title='Voir le projet'>En savoir plus...</a>",
+        'La note émise par un tuyau est la même que celle émise par un tuyau deux fois plus long, avec une octave de différence.<br/><a itemscope itemtype="https://schema.org/Project" href="portfolio_instruments.html" title="Voir le projet">En savoir plus...</a>',
+        "Peu importe son diamètre, un tuyau d'un mètre de longueur produira toujours la note mi.<br/><a itemscope itemtype='https://schema.org/Project' href='portfolio_instruments.html' title='Voir le projet'>En savoir plus...</a>",
+        "En bouchant le trou à l'extrémité d'un tuyau, le son émis est une octave plus grave.<br/><a itemscope itemtype='https://schema.org/Project' href='portfolio_instruments.html' title='Voir le projet'>En savoir plus...</a>",
+        "L'orgue est l'instrument physique ayant la plus grande tessiture (différence entre sa note la plus haute et sa note la plus basse).<br/><a itemscope itemtype='https://schema.org/Project' href='portfolio_instruments.html' title='Voir le projet'>En savoir plus...</a>",
+        'Il y a des raccourcis clavier pour les accents des majuscules. Alt 144 -> É, Alt 0192 -> À...<br/><a itemprop="knowsAbout" itemprop="url" href="portfolio_info.html" title="Informatique">En savoir plus...</a>',
+        "À l'origine, Renard était le nom d'un personnage de roman. Avant cela, le renard était communément appelé un goupil.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_litte.html' title='Littérature'>En savoir plus...</a>",
+        "Le courant artistique réaliste tire son nom d'une critique des tableaux de Courbet, jugés trop réalistes pour être exposés à l'exposition universelle.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_arts.html' title='Arts'>En savoir plus...</a>",
+        "La plupart des contes que l'on connaît n'ont pas été inventés mais collectés auprès de la population. Seul Andersen en a créé de toute pièce.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_litte.html' title='Littérature'>En savoir plus...</a>",
+        "Le classicisme littéraire est un courant exclusivement français.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_litte.html' title='Littérature'>En savoir plus...</a>",
+        "Lors de la première représentation de la pièce Hernani d'Hugo, le public s'est battu, choqué par la déconstruction formelle des vers.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_litte.html' title='Littérature'>En savoir plus...</a>",
+        "Le classicisme a tiré son inspiration de l'Antiquité. Le romantisme, lui, s'est tourné vers le Moyen-Âge.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_litte.html' title='Littérature'>En savoir plus...</a>",
+        "Le baroque et ses œuvres ostentatoires sont une réponse directe au développement du protestantisme.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_arts.html' title='Arts'>En savoir plus...</a>",
+        "La plupart des grands musiciens de notre temps ont appris la musique seuls et sans solfège.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_musique.html' title='Musique'>En savoir plus...</a>",
+        "La chanson d'amour française la plus populaire, La vie en rose, peut être intérprétée d'une manière bien plus sombre.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_musique.html' title='Musique'>En savoir plus...</a>",
+        "Dans les programmes de l'éducation nationale, on ne parle pas de crayon mais d'outil scripteur.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_peda.html' title='Pédagogue'>En savoir plus...</a>",
+        "Dans les programmes de l'éducation nationale, on ne parle pas de ballon mais de référentiel bondissant (aléatoire, pour le ballon de rugby).<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_peda.html' title='Pédagogue'>En savoir plus...</a>",
+        "Il faut environ 8 minutes à la lumière du Soleil pour parvenir jusqu'à la Terre.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_sciences.html' title='Sciences'>En savoir plus...</a>",
+        "Les ondes sonores ne se propage pas dans le vide. Il n'y a donc pas de bruit dans l'espace.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_sciences.html' title='Sciences'>En savoir plus...</a>",
+        "Lors de sa découverte en 1781, la planète Uranus a été baptisée George en l'honneur du roi d'Angleterre George III.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_sciences.html' title='Sciences'>En savoir plus...</a>",
+        "Sur Vénus, un jour est plus long qu'une année.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_sciences.html' title='Sciences'>En savoir plus...</a>",
+        "Le champ magnétique de la Terre a déjà changé plusieurs fois. Il y a très longtemps, les boussoles auraient pointé vers le Sud.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_sciences.html' title='Sciences'>En savoir plus...</a>",
+        "La Lune s'éloigne peu à peu de la Terre, environ 5cm chaque année. Elle nous aurait paru bien plus grosse il y a des millions d'années.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_sciences.html' title='Sciences'>En savoir plus...</a>",
+        "Le premier ordinateur, l'ENIAC, a été construit en 1946. Il pesait 27 tonnes.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_info.html' title='Informatique'>En savoir plus...</a>",
+        "En Allemagne, un orgue automatisé joue depuis 2004 un morceau de John Cage conçu pour durer le plus longtemps possible. L'œuvre devrait se terminer en 2640.<br/><a itemprop='knowsAbout' itemprop='url' href='portfolio_musique.html' title='Musique'>En savoir plus...</a>",
+        ];
+    return randomtxt[Math.floor((Math.random() * randomtxt.length))];
+    }
+
+document.getElementById("fait").innerHTML = randomtext();
+</script>
