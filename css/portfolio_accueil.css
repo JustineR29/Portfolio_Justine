@@ -352,7 +352,7 @@ a:hover{
     h2 {
         font-size: small;
     }
-    p, li, ul{
+    p, li, ul, footer>p{
       font-size: x-small;
     }
 }
@@ -363,7 +363,7 @@ a:hover{
     h2 {
         font-size: x-small;
     }
-    p, li, ul{
+    p, li, ul, footer>p{
       font-size: xx-small;
     }
 }
@@ -374,7 +374,7 @@ a:hover{
     h2 {
         font-size: xx-small;
     }
-    p, li, ul{
+    p, li, ul, footer>p{
       font-size: xx-small;
     }
 }
